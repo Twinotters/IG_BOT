@@ -7,6 +7,7 @@ There are many! But this is one:
 1- First things first, you should download the files or clone this repository. 
 2- Install selenium [ pip install selenium ]
 3- Afterwards, open the terminal, and head to the file directory
+5- Open de python file named "ig_bot1.py" in a code editor, and put your instagram credentials at the bottom of the code.
 4- Run the python file named "ig_bot1.py"
 
 ## Contributing
