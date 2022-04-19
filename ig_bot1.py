@@ -47,8 +47,18 @@ class InstaBot:
 
 		#List of not following back
 		not_following_back = [user for user in following if user not in followers]
-		print(not_following_back)		
+		print(not_following_back)
 
+		for usuario in not_following_back:
+			self.driver.find_element_by_xpath("/html/body/div[1]/section/nav/div[2]/div/div/div[2]/input").send_keys(usuario)
+			sleep(4)
+			self.driver.find_element_by_xpath('/html/body/div[1]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]/div/div[1]/a/div/div[2]/div[1]/div/div/div[1]').click()
+			sleep(4)
+			self.driver.find_element_by_xpath('/html/body/div[1]/section/main/div/header/section/div[1]/div[1]/div/div[2]/button/div/div/span').click()
+			sleep(4)
+			self.driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div[3]/button[1]').click()
+			sleep(4)
+		
 		# Get List Function
 
 	def _get_names_followers(self):
